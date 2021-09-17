@@ -1,0 +1,82 @@
+/*Le agregamos el margen de 0, un relleno o padding de 0 
+y por último un box-sizing: border-box, para poder ver como todo
+ahora se pega**/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Vamos a poner propiedad html, ahora con el comportamiento
+del scroll, quiero que tengas un smooth, ósea suave**/
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*Vamos al cuerpo o body de nuestro web html y pegamos
+la tipografía de raleway de google fonts*/
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+/*Vamos al estilo con la clase hero, copiamos el gradient sacado de webgradient, ponemos
+url, salimos de la ruta de css y vamos a img con la imagen de ZionDental Carousel.png**/
+
+.hero{
+    background-image: linear-gradient(to top, rgba(255, 154, 157, 0.694) 0%, rgba(254, 207, 239, 0.694) 99%, #fecfef 100%), url("../img/Servicios_4.png");
+    width: 100%;
+    height: 650px;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    /*Para que nada salga del hero*/
+    overflow: hidden;
+}
+
+/*Vamos a la clase textos hero, parte donde está el encabezado de 
+bienvenida con la foto. Con esto el texto se pone uno al lado del otro y
+la ola azul se pone abajo.
+Para saber más de flex, ingresar a esté link:
+https://developer.mozilla.org/es/docs/Web/CSS/flex*/
+
+.textos-hero{
+    height: 500px;
+    color: #fff;
+    display: flex;
+    /*Con un flex direction column, le decimos a los textos que se
+    orden por columna y no por fila*/
+    flex-direction: column;
+    /*Centrar el contenido(textos) en el navegador entre y alrededor 
+    de los items flex. Para saber más de está propiedad, visita:
+    https://developer.mozilla.org/es/docs/Web/CSS/justify-content*/
+    justify-content: center;
+    /*Con está propiedad los centramos horizontalmente y verticalmente  */
+    align-items: center;
+}
+
+/*Ahora le daremos estilos al h1, aumentando el tamaño fuente de la letra */
+.textos-hero h1{
+    font-size: 60px;
+}
+
+.textos-hero p{
+    font-size: 25px;
+    /*Esto es para que no se pegue al botón de contactanos, para hacer espacio*/
+    margin-bottom: 20px;
+}
+
+/*Vamos a modificar los elementos a que estén todos dentro de textos-hero**/
+.textos-hero a{
+    /*Para tener propiedades de bloque y de línea*/
+    display: inline-block;
+    /*Text Decoration para quitar el subrayado*/
+    text-decoration: none;
+    /*Padding 12px arriba y abajo, también 15px a los lados*/
+    padding: 12px;
+}
+

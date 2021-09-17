@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zion Dental</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <header class="hero">
+        
+        <div class="textos-hero">
+            <h1>Bienvenido a Zion Dental</h1>
+            <p>La mejor odontología para ti</p>
+            <a href="#contacto">Contactanos</a>
+        </div>
+        <!--Le ponemos una clase llamada svg-hero-->
+        <div class="svg-hero" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.21,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #08f;"></path></svg></div>
+    </header>
+    <section class="wave contenedor website">
+        <img src="/img/horario-dental.png" alt="">
+        <div class="contenedor-textos-main">
+            <h2 class="titulo left">Titulo de la sección</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo recusandae quo, corrupti aspernatur numquam eaque molestias impedit minima id maiores!</p>
+            <a href="" class="cta">Aprende más</a>
+        </div>
+    </section>
+    <!--SECCIÓN DE INFORMACIÓN-->
+    <section class="info">
+        <!--Contenedor va dentro de info, porque se utilizará un color directamente-->
+        <div class="contenendor">
+            <h2 class="titulo left">Conoce más sobre nosotros</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, incidunt?</p>
+        </div>
+    </section>
+    <!--Ahora se agrega la clase card con la clase contenedor, donde se mostrará los servicios-->
+        <section class="cards contenedor">
+            <h2 class="titulo">Nuestro Servicios</h2>
+            <div class="content cards">
+                <article class="card">
+                    <!--se copia el icono clone desde la web fontawesone-->
+                    <i class="far fa-clone"></i>
+                    <h3>Tarjeta de Título</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <!--Agregamos un elemnto a con un botón que tenga la clase cta-->
+                    <a href="" class="cta">Aprende más</a>
+                </article>
+                <article class="card">
+                    <!--se copia el icono clone desde la web fontawesone-->
+                    <i class="fas fa-tooth"></i>
+                    <h3>Tarjeta de Título</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <!--Agregamos un elemnto a con un botón que tenga la clase cta-->
+                    <a href="" class="cta">Aprende más</a>
+                </article>
+                <article class="card">
+                    <!--se copia el icono clone desde la web fontawesone-->
+                    <i class="fas fa-teeth-open"></i>
+                    <h3>Tarjeta de Título</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <!--Agregamos un elemnto a con un botón que tenga la clase cta-->
+                    <a href="" class="cta">Aprende más</a>
+                </article> 
+            </div>
+        </section>
+
+        <section class="galeria">
+            <div class="contenedor">
+                <h2 class="titulo">Nuestro Trabajo</h2>
+                <article>
+                    <img src="/img/Servicios.png" alt="">
+                    <img src="/img/Servicios_1.png" alt="">
+                    <img src="/img/Servicios_2.png" alt="">
+                    <img src="/img/Servicios_3.png" alt="">
+                    <img src="/img/Servicios_4.png" alt="">
+                    <img src="/img/Servicios_5.png" alt="">
+                </article>
+            </div>
+        </section>
+
+        <section class="info-last">
+            <div class="contenedor last-section">
+                <h2 class="titulo left">Título de la sección</h2>
+                <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit est voluptas repudiandae dolore distinctio sed.</p>
+                <a href="" class="cta">Aprende más</a>
+                <img src="/img/cuidado-dental.svg" alt="">
+                <!--Le agregamos la clase svg-wave-->
+                <div class="svg-wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.21,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #08f;"></path></svg></div>
+            </div>
+        </section>
+
+        <!--Footer tendrá el id contacto para hacer anclaje con lo que sería el hero-->
+        <footer id="contacto">
+            <div class="contenedor">
+                <h2 class="titulo">Contactanos</h2>
+                <!--Agregamos un form con la clase form-->
+                <form action="" class="form">
+                    <!--A TODOS estos elementos le agregamos la clase input-->
+                    <!--Input de tipo texto con la leyenda nombre-->
+                    <input class="input" type="text" name="" id="" placeholder="Nombre">
+                    <!--Input de tipo email con la leyenda Email-->
+                    <input class="input" type="email" name="" id="" placeholder="Email">
+                    <!--Un text area con el placeholder mensaje-->
+                    <textarea class="input" name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <!--Un input de tipo submit para enviar todo y tenga el valor enviar-->
+                    <input class="input" type="submit" value="enviar">
+                </form>
+            </div>
+        </footer>
+    <!--Copiarmos el kit de fontawesone-->
+    <script src="https://kit.fontawesome.com/e0b2b10dd0.js" crossorigin="anonymous"></script>
+</body>
+</html> 
