@@ -76,7 +76,29 @@ https://developer.mozilla.org/es/docs/Web/CSS/flex*/
     display: inline-block;
     /*Text Decoration para quitar el subrayado*/
     text-decoration: none;
-    /*Padding 12px arriba y abajo, también 15px a los lados*/
-    padding: 12px;
+    /*Padding 12px arriba y abajo, también 15px a los lados,
+    con esto lo hacemos más grande el link de contactanos*/
+    padding: 12px 15px;
+    background: #a18cd1;
+    /*Ahora para redondearlo usamos:*/
+    border-radius: 8px;
+    /*Color del texto blanco*/
+    color: #fff;
 }
+
+/*Ahora vamos con la clase svg-hero, el cual es la ola azul*/
+.svg-hero{
+    /*Para posicionarse inmediatamente del padre que tiene un posisición relative,
+    para saber más de ello, visita:
+    https://developer.mozilla.org/es/docs/Web/CSS/position*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /*Con estás propiedades fijamos totalmente que la ola azul
+    siempre esté en la posición de abajo y nunca se vaya de esa parte,
+    siempre estará en la parte de abajo  */
+}
+
+/*Estilos Generales*/
 
