@@ -100,5 +100,30 @@ https://developer.mozilla.org/es/docs/Web/CSS/flex*/
     siempre estará en la parte de abajo  */
 }
 
-/*Estilos Generales*/
+/*Estilos Generales,
+le decimos a las clases:
+*contenedor
+*wave-contenedor
+Las configuraciones adecuadas en el css
+*/
+.contenedor,
+.wave-contenedor{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+    /*arriba y abajo, 0 0, 80px abajo y 0 hacía los lados*/
+    padding: 0 0 80px 0 ;
+}
 
+/*Ahora solamente a contenedor le damos un padding arriba y abajo de 80px y 0 hacía los lados */
+.contenedor{
+    padding: 80px 0;
+}
+
+/*Ponemos estilos a los titulos*/
+.titulo{
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 30px;
+}
