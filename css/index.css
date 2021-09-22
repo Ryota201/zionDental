@@ -127,3 +127,44 @@ Las configuraciones adecuadas en el css
     text-align: center;
     margin-bottom: 30px;
 }
+
+/*La clase titulo con la clase left y right al lado,
+le decimos que tenga las siguientes características en css*/
+
+.titulo.left{
+    text-align: left;
+}
+
+/*
+.titulo.right{
+    text-align: right;
+}
+*/
+
+/* Section, tenemos la clase website, el cual es el 1er elemento */
+
+.website{
+    /*Para que se pongan los elementos uno al lado del otro*/
+    display: flex;
+    /*Espacio entre los elementos*/
+    justify-content: space-between;
+}
+
+/*A la ilustración dentro del website le decimos que tenga
+un ancho del 48% para que pueda compartir espacios con los textos*/
+.website img{
+    width: 48%;
+}
+
+/*Con el space-between logramos el espacio entre el texto y la imagen
+en la sección del website*/
+.website .contenedor-textos-main{
+    width: 40%;
+}
+
+/*Le decimos a la clase parrafo que tenga un text-align y un margin bottom para
+que tenga espacio entre el título y también el enlace(Aprende más) */
+.parrafo{
+    text-align: justify;
+    margin-bottom: 20px;
+}
