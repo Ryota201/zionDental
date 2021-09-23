@@ -168,3 +168,17 @@ que tenga espacio entre el título y también el enlace(Aprende más) */
     text-align: justify;
     margin-bottom: 20px;
 }
+
+/*Todos los elementos con la clase cta van a tener:*/
+.cta{
+    /*Para tener propiedades de línea y de bloque*/
+    display: inline-block;
+    /*Para saber más de está propiedad, visitar:
+    https://developer.mozilla.org/es/docs/Web/CSS/text-decoration*/
+    text-decoration: none;
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    /*12px arriba y 15px hacía los lados*/
+    padding: 12px 15px;
+    border-radius: 8px;
+    color: #fff;
+}
