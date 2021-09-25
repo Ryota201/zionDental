@@ -123,7 +123,7 @@ Las configuraciones adecuadas en el css
 
 /*Ponemos estilos a los titulos*/
 .titulo{
-    font-weight: 300;
+    font-weight: 320;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -237,4 +237,45 @@ a 6px y  */
     color: #cc9199;
     /*Para hacerlo má grande*/
     font-size: 50px;
+}
+
+/*El elemento p dentro de la clase card(en article)*/
+.card p{
+    font-weight: 300px;
+    font-size: 25px;
+    /*Como se sobrepone el margen sobre (aprende más), 
+    así que en card le damos la propiedad para que tenga un 60% de ancho*/
+    margin-bottom: 10px;
+}
+
+/*Galeria*/
+
+.galeria{
+    background: #f1f1;
+}
+
+/*La clase que está en article*/
+.galeria-cont{
+    /*Para conocer más de la propiedad css flex-box, visitar:
+    https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox*/
+    width: 100%;
+    display: flex;/*La imagenes hacía al lado*/
+    flex-wrap: wrap;/*Se pone una debajo del otro*/
+    /*Espacio entre las imagenes de la galeria equitativamente*/
+    justify-content: space-evenly;
+    /*Para que nada salga del contenedor de la galeria*/
+    overflow: hidden;
+}
+
+/*Dentro de la galeria le decimos a la imagen que tenga un ancho del 30%*/
+.galeria-cont>img{
+    width: 30%;
+    /*Para saber más de está propiedad, visitar:
+    https://developer.mozilla.org/es/docs/Web/CSS/object-fit*/
+    object-fit: cover;
+    margin-bottom: 20px;
+    display: block;
+    box-shadow: 0px 0px 3px 0px rgba(0,0, 0, .5);
+    cursor: pointer;/*Para mostrar el cursor cuando se acerca a la imagen(la manito)*/
+    overflow: hidden;
 }
