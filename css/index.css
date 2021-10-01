@@ -79,7 +79,7 @@ https://developer.mozilla.org/es/docs/Web/CSS/flex*/
     /*Padding 12px arriba y abajo, también 15px a los lados,
     con esto lo hacemos más grande el link de contactanos*/
     padding: 12px 15px;
-    background: #a18cd1;
+    background: #89e9d7;
     /*Ahora para redondearlo usamos:*/
     border-radius: 8px;
     /*Color del texto blanco*/
@@ -176,7 +176,7 @@ que tenga espacio entre el título y también el enlace(Aprende más) */
     /*Para saber más de está propiedad, visitar:
     https://developer.mozilla.org/es/docs/Web/CSS/text-decoration*/
     text-decoration: none;
-    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    background-image: linear-gradient(45deg, #9aeeff 0%, #c4fafa 99%, #b0f3eb 100%);
     /*12px arriba y 15px hacía los lados*/
     padding: 12px 15px;
     border-radius: 8px;
@@ -185,7 +185,7 @@ que tenga espacio entre el título y también el enlace(Aprende más) */
 
 /*Sección de Información */
 .info{
-    background: #f5576c;
+    background: #89e9d7;
     color: #fff;
 }
 
@@ -234,7 +234,7 @@ a 6px y  */
 .card i{
     /*30px arriba, 0 hacía la derecha, 20px abajo y 0 a la izquierda*/
     margin: 30px 0 20px 0;
-    color: #cc9199;
+    color: #89e9d7;
     /*Para hacerlo má grande*/
     font-size: 50px;
 }
@@ -251,7 +251,7 @@ a 6px y  */
 /*Galeria*/
 
 .galeria{
-    background: #f1f1;
+    background: #dff3f0;
 }
 
 /*La clase que está en article*/
@@ -276,6 +276,77 @@ a 6px y  */
     margin-bottom: 20px;
     display: block;
     box-shadow: 0px 0px 3px 0px rgba(0,0, 0, .5);
-    cursor: pointer;/*Para mostrar el cursor cuando se acerca a la imagen(la manito)*/
+    /*  cursor: pointer;/*Para mostrar el cursor cuando se acerca a la imagen(la manito)*/
     overflow: hidden;
+}
+
+/*info 2*/
+.last-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.last-section img{
+    width: 48%;
+}
+
+.last-section .contenedor-textos-main{
+    width: 40%;
+}
+
+/*Footer*/
+footer{
+    background: #89e9d7;
+    color: #fff;
+}
+
+/*Creamos los estilos para el formulario*/
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input{
+    background: transparent;
+    border:0;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 20px 10px;
+}
+
+.input::placeholder{
+    color: #fff;
+    font-family: 'raleway', 'sans-serif';
+}
+
+/*Input que tenga los atributos de tipo texto y email*/
+input[type="text"],
+input[type="email"]{
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 30px;
+}
+
+.form textarea{
+    /*para desplazar el botón enviar*/
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+input[type=submit]{
+    width: 120px;
+    text-align: center;
+    /*14px arriba y abajo, 0 hacía los lados*/
+    padding: 14px 0;
+}
+
+input[type=submit]:hover{
+    /*Cada que pase el mouse:*/
+    cursor: pointer;
+    color: #02FFD1;
+    background: #fff;   
 }
