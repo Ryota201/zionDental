@@ -352,7 +352,7 @@ input[type=submit]:hover{
     background: #fff;   
 }
 
-@media screen and (max-width:800px) {
+@media screen and (min-width:401px) and (max-width:800px) {
     .textos-hero h1{
         text-align: center;
         font-size: 50px; 
@@ -404,6 +404,7 @@ input[type=submit]:hover{
     .card{
         /*Recordar que se da un flex-wrap con un width del 90%*/
         width: 90%;
+        height: 250px;
         margin-bottom: 20px;
     }
     /*Galeria*/
@@ -425,22 +426,24 @@ input[type=submit]:hover{
     }
 
     /*Se centra todos los botones con la clase cta*/
-    .contenedor-textos-main a{ 
-        width: 95%;
+    .contenedor-textos-main a{
+        max-width: 150px;
+        height: auto;
+        display: block;
+        margin: auto;
         text-align: center;
     }
     /*En la clase last-section en el a(ancla) se da un ancho específico*/
-    .last-section a{
-        width: 150px;
-        text-align: center;
-        display: block;
-        margin: auto;
-    }
+
     .last-section img{
         width: 50%;
         /*Para centrar imagen*/
         display:block;
         margin:auto;
+    }
+
+    .last-section a{
+        width: 150px;
     }
 }
 
@@ -479,12 +482,25 @@ input[type=submit]:hover{
 
     /*Se centra todos los botones con la clase cta*/
     .contenedor-textos-main a{ 
-        width: 95%;
-        text-align: center;
+        width: 30%;
+        display:block;
+        margin:auto;
     }
     /*En la clase last-section en el a(ancla) se da un ancho específico*/
     .last-section a{
-        width: 100%;
+        width: 50%;
     }
+}    
 
+@media screen and (min-width:275px) and (max-width:400px){
+    /*Se centra todos los botones con la clase cta*/
+    .contenedor-textos-main a{ 
+        width: 30%;
+        display:block;
+        margin:auto;
+    }
+    /*En la clase last-section en el a(ancla) se da un ancho específico*/
+    .last-section a{
+        width: 50%;
+    }
 }
