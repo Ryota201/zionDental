@@ -352,7 +352,7 @@ input[type=submit]:hover{
     background: #fff;   
 }
 
-@media screen and (min-width:401px) and (max-width:800px) {
+@media screen and (min-width:400px) and (max-width:800px){
     .textos-hero h1{
         text-align: center;
         font-size: 50px; 
@@ -404,14 +404,13 @@ input[type=submit]:hover{
     .card{
         /*Recordar que se da un flex-wrap con un width del 90%*/
         width: 90%;
-        height: 250px;
-        margin-bottom: 20px;
+        margin-bottom: 20px; 
     }
     /*Galeria*/
     .galeria-cont>img{
         /*A todas las imagenes adentro le damos un ancho del 48%, en vez de tener 3 imagenes
         hacía abajo, ahora tendremos 2 imagenes por fila*/
-        width: 48% ;
+        width: 48%;
     }
 
     /*A la última sección de info  como ya se le había dado un flex wrap, ahora solamente lo que 
@@ -448,59 +447,98 @@ input[type=submit]:hover{
 }
 
 /*Ahora se hará la responsividad a 200px*/
-@media screen and (max-width:400px) {
+@media screen and (min-width:200px) and (max-width:400px) {
     .titulo,
     .textos-hero h1{
         font-size: 30px;
+        text-align: center;
     }
 
     .card{
-        width: 97%;
+        width: 98%;
     }
 
     .textos-hero p{
         font-size: 20px;
+        margin: 10px;
         text-align: center;
     }
+
+    /*La clase website que contiene: 
+    <h2 class="titulo left">Historia</h2>
+    <p class="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo recusandae quo, 
+    corrupti aspernatur numquam eaque molestias impedit minima id maiores!</p>
+    <a href="" class="cta">Aprende más</a>
+    La dirección se pone a la reserva de las columnas del contenido
+    */
+    .website{
+        flex-direction: column-reverse;
+    }
+
+    /*Dentro de la clase contenedor-textos-main centralizamos el contenido 
+    por bloque y definimos su ancho*/
     .website .contenedor-textos-main{
-        margin-bottom: 30px;
+        display: block;
+        margin: auto;
+        width: 80%;
+        text-align: center;
+    }
+    /*Para centrar el titulo de historia*/
+    .website .contenedor-textos-main .titulo.left{
+        text-align: center;
+    }
+
+    /*Para centralizar el boton de aprende más con el texto correspondiente y su ancho*/
+    .website .contenedor-textos-main a{
+        display:block;
+        margin: auto;
+        width: auto;/*Se pone en auto para que se adapte automáticamente al ancho */
+        text-align: center
+    }
+
+    /*Se configura la imagen dentro de la clase website para ser centralizada y definir su ancho*/
+    .website img{
+        width: 55%;
+        display: block;
+        margin: auto;
+        /*Espacio del margen arriba de la imagen*/
+        margin-top: 20px;
+    }
+
+    /*Seccion que hacemos?*/
+    .contenedor .titulo.left{
+        text-align: center;
+    }
+
+    /*Sección nuestros servicios o cards*/
+    .contenedor .content-cards .card{
+        margin-top: 15px;
     }
 
     /*Galeria*/
     .galeria-cont>img{
-        width: 97%;
+        width: 48%;
     }
 
-    /*toma la última clase declarada en el html:
+    /* Last Section*/
+    .last-section  .contenedor-textos-main{
+        display:block;
+        margin:auto;
+        width: auto;
+    }
+
+    .last-section  a{
+        text-align: center;
+        justify-content: center;  
+        margin: auto ;
+    }
+
+    /*Toma la última clase declarada en el html:
     <div class="contenedor last-section">*/
     .last-section img{
-        width: 70%;
+        width: 100%;
         /*Para centrar botón*/
         display:block;
         margin:auto;
     }
-
-    /*Se centra todos los botones con la clase cta*/
-    .contenedor-textos-main a{ 
-        width: 30%;
-        display:block;
-        margin:auto;
-    }
-    /*En la clase last-section en el a(ancla) se da un ancho específico*/
-    .last-section a{
-        width: 50%;
-    }
 }    
-
-@media screen and (min-width:275px) and (max-width:400px){
-    /*Se centra todos los botones con la clase cta*/
-    .contenedor-textos-main a{ 
-        width: 30%;
-        display:block;
-        margin:auto;
-    }
-    /*En la clase last-section en el a(ancla) se da un ancho específico*/
-    .last-section a{
-        width: 50%;
-    }
-}
