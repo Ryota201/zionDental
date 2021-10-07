@@ -269,7 +269,8 @@ a 6px y  */
 
 /*Dentro de la galeria le decimos a la imagen que tenga un ancho del 30%*/
 .galeria-cont>img{
-    width: 30%;
+    width: 267px; 
+    height: 178px;
     /*Para saber más de está propiedad, visitar:
     https://developer.mozilla.org/es/docs/Web/CSS/object-fit*/
     object-fit: cover;
@@ -349,4 +350,141 @@ input[type=submit]:hover{
     cursor: pointer;
     color: #02FFD1;
     background: #fff;   
+}
+
+@media screen and (max-width:800px) {
+    .textos-hero h1{
+        text-align: center;
+        font-size: 50px; 
+    }
+    /*Estilos Generales*/
+    .titulo{
+        font-size: 35px;
+    }
+
+    .titulo.left{
+        text-align: center;
+    }
+    
+    .info p{
+        text-align: center;
+    }
+
+    /*Section*/
+    .website{
+        /*Para que se ponga uno encima del otro(texto con la imagen)*/
+        flex-direction: column-reverse;
+        /*Esto lo que hará será centrarlos*/
+        justify-content: center;
+        align-items: center;
+    }
+
+    .website img{
+        width: 55%;
+        margin: 20px;
+    }
+
+    .website .contenedor-textos-main{
+        width: 100%;
+    }
+
+    .website .contenedor-textos-main a{
+        width: 50%;
+        /*Para centrar imagen*/
+        display:block;
+        margin:auto;
+    }
+
+    .contenedor-textos-main .parrafo{
+        text-align: center;
+    }
+
+
+    /*Cards o nuestros servicios*/
+    .card{
+        /*Recordar que se da un flex-wrap con un width del 90%*/
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    /*Galeria*/
+    .galeria-cont>img{
+        /*A todas las imagenes adentro le damos un ancho del 48%, en vez de tener 3 imagenes
+        hacía abajo, ahora tendremos 2 imagenes por fila*/
+        width: 48% ;
+    }
+
+    /*A la última sección de info  como ya se le había dado un flex wrap, ahora solamente lo que 
+    tenemos que hacer es agrandar el tamaño para que se todo se haga automáticamente*/
+    .last-section{
+        width: 98%;
+    }
+
+    .last-section .contenedor-textos-main{
+        width: 98%;
+        margin-bottom: 20px;
+    }
+
+    /*Se centra todos los botones con la clase cta*/
+    .contenedor-textos-main a{ 
+        width: 95%;
+        text-align: center;
+    }
+    /*En la clase last-section en el a(ancla) se da un ancho específico*/
+    .last-section a{
+        width: 150px;
+        text-align: center;
+        display: block;
+        margin: auto;
+    }
+    .last-section img{
+        width: 50%;
+        /*Para centrar imagen*/
+        display:block;
+        margin:auto;
+    }
+}
+
+/*Ahora se hará la responsividad a 200px*/
+@media screen and (max-width:400px) {
+    .titulo,
+    .textos-hero h1{
+        font-size: 30px;
+    }
+
+    .card{
+        width: 97%;
+    }
+
+    .textos-hero p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .website .contenedor-textos-main{
+        margin-bottom: 30px;
+    }
+
+    /*Galeria*/
+    .galeria-cont>img{
+        width: 97%;
+    }
+
+    /*toma la última clase declarada en el html:
+    <div class="contenedor last-section">*/
+    .last-section img{
+        width: 70%;
+        /*Para centrar botón*/
+        display:block;
+        margin:auto;
+    }
+
+    /*Se centra todos los botones con la clase cta*/
+    .contenedor-textos-main a{ 
+        width: 95%;
+        text-align: center;
+    }
+    /*En la clase last-section en el a(ancla) se da un ancho específico*/
+    .last-section a{
+        width: 100%;
+    }
+
 }
