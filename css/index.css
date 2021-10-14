@@ -143,7 +143,7 @@ le decimos que tenga las siguientes características en css*/
 
 /* Section, tenemos la clase website, el cual es el 1er elemento */
 
-.website{
+.website-history{
     /*Para que se pongan los elementos uno al lado del otro*/
     display: flex;
     /*Espacio entre los elementos*/
@@ -152,21 +152,28 @@ le decimos que tenga las siguientes características en css*/
 
 /*A la ilustración dentro del website le decimos que tenga
 un ancho del 48% para que pueda compartir espacios con los textos*/
-.website img{
-    width: 48%;
+/*.website-history img{
+    width: 30%;
+    height: 250px;
+    display: block;
+    margin: auto;
+    margin-right: 150px;
 }
+*/
 
 /*Con el space-between logramos el espacio entre el texto y la imagen
 en la sección del website*/
-.website .contenedor-textos-main{
-    width: 40%;
+.website-history .contenedor-textos-main{
+    width: auto;
+    height: auto;
 }
 
 /*Le decimos a la clase parrafo que tenga un text-align y un margin bottom para
 que tenga espacio entre el título y también el enlace(Aprende más) */
 .parrafo{
     text-align: justify;
-    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 35px;
 }
 
 /*Todos los elementos con la clase cta van a tener:*/
@@ -352,6 +359,7 @@ input[type=submit]:hover{
     background: #fff;   
 }
 
+
 @media screen and (min-width:400px) and (max-width:800px){
     .textos-hero h1{
         text-align: center;
@@ -371,19 +379,20 @@ input[type=submit]:hover{
     }
 
     /*Section*/
-    .website{
+    .website-history{
         /*Para que se ponga uno encima del otro(texto con la imagen)*/
-        flex-direction: column-reverse;
+        /*flex-direction: column-reverse;*/
         /*Esto lo que hará será centrarlos*/
         justify-content: center;
         align-items: center;
     }
-
-    .website img{
+    
+    /*
+    .website-history img{
         width: 55%;
         margin: 20px;
     }
-
+    */
     .website .contenedor-textos-main{
         width: 100%;
     }
@@ -471,34 +480,35 @@ input[type=submit]:hover{
     <a href="" class="cta">Aprende más</a>
     La dirección se pone a la reserva de las columnas del contenido
     */
-    .website{
+    .website-history{
         flex-direction: column-reverse;
     }
 
     /*Dentro de la clase contenedor-textos-main centralizamos el contenido 
     por bloque y definimos su ancho*/
-    .website .contenedor-textos-main{
+    .website-history .contenedor-textos-main{
         display: block;
         margin: auto;
         width: 80%;
         text-align: center;
     }
     /*Para centrar el titulo de historia*/
-    .website .contenedor-textos-main .titulo.left{
+    .website-history .contenedor-textos-main .titulo.left{
         text-align: center;
     }
 
     /*Para centralizar el boton de aprende más con el texto correspondiente y su ancho*/
-    .website .contenedor-textos-main a{
+    .website-history .contenedor-textos-main a{
         display:block;
         margin: auto;
         width: auto;/*Se pone en auto para que se adapte automáticamente al ancho */
+        height: auto;
         text-align: center
     }
 
     /*Se configura la imagen dentro de la clase website para ser centralizada y definir su ancho*/
-    .website img{
-        width: 55%;
+    .website-history img{
+        width: 100px;
         display: block;
         margin: auto;
         /*Espacio del margen arriba de la imagen*/
