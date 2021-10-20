@@ -22,6 +22,7 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
+
 /*Vamos al estilo con la clase hero, copiamos el gradient sacado de webgradient, ponemos
 url, salimos de la ruta de css y vamos a img con la imagen de ZionDental Carousel.png**/
 
@@ -216,7 +217,8 @@ si lo ponemos al 60% todo sobrepasan y se ponen uno debajo del otro*/
     /*Si quieres saber más de está propiedad, visita:
     https://developer.mozilla.org/en-US/docs/Web/CSS/text-align*/
     text-align: center;
-    height: 300px;
+    height: auto;
+    padding: 10px;
     /*Con esto se hace la parte del sombra en nuestra tarjeta*/
     box-shadow: 0 0 3px 0 rgba(0,0, 0, .5);
     /*Para que no pase nada*/
@@ -249,10 +251,11 @@ a 6px y  */
 /*El elemento p dentro de la clase card(en article)*/
 .card p{
     font-weight: 300px;
-    font-size: 25px;
+    font-size: 15px;
     /*Como se sobrepone el margen sobre (aprende más), 
     así que en card le damos la propiedad para que tenga un 60% de ancho*/
     margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 /*Galeria*/
@@ -465,10 +468,24 @@ input[type=submit]:hover{
 
     .card{
         width: 98%;
+        margin-bottom: 5vw;
+        
     }
 
+    .card p{
+        font-size: medium;
+        /*Como se sobrepone el margen sobre (aprende más), 
+        así que en card le damos la propiedad para que tenga un 60% de ancho*/
+        margin-bottom: 10px;
+        margin-inline-end: inherit;
+    }
+
+    .card a{
+        margin-top: 10px;
+    }
+  
     .textos-hero p{
-        font-size: 20px;
+        font-size: medium;
         margin: 10px;
         text-align: center;
     }
@@ -520,9 +537,12 @@ input[type=submit]:hover{
         text-align: center;
     }
 
+
     /*Sección nuestros servicios o cards*/
     .contenedor .content-cards .card{
-        margin-top: 15px;
+        width: 95%;
+        height: auto;
+        padding: 15px;
     }
 
     /*Galeria*/
