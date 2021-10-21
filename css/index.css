@@ -362,6 +362,19 @@ input[type=submit]:hover{
     background: #fff;   
 }
 
+/*Estilos para el icono de WhatsApp*/
+.appWhatsapp{
+    position: fixed;
+    right: 26px;
+    bottom: 100px;
+    width: 60px;
+    z-index: 1000;
+}
+
+.appWhatsapp img{
+    width: 100%;
+    height: auto;
+}
 
 @media screen and (min-width:400px) and (max-width:800px){
     .textos-hero h1{
@@ -457,6 +470,7 @@ input[type=submit]:hover{
         width: 150px;
     }
 }
+
 
 /*Ahora se hará la responsividad a 200px*/
 @media screen and (min-width:200px) and (max-width:400px) {
