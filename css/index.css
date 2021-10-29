@@ -110,7 +110,6 @@ Las configuraciones adecuadas en el css
 .contenedor,
 .wave-contenedor{
     width: 90%;
-    max-width: 1000px;
     overflow: hidden;
     margin: auto;
     /*arriba y abajo, 0 0, 80px abajo y 0 hacía los lados*/
@@ -173,7 +172,7 @@ en la sección del website*/
 que tenga espacio entre el título y también el enlace(Aprende más) */
 .parrafo{
     text-align: justify;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: -webkit-pictograph;
     margin-bottom: 35px;
 }
 
@@ -279,8 +278,8 @@ a 6px y  */
 
 /*Dentro de la galeria le decimos a la imagen que tenga un ancho del 30%*/
 .galeria-cont>img{
-    width: 267px; 
-    height: 178px;
+    width: 300px; 
+    height: 205px;
     /*Para saber más de está propiedad, visitar:
     https://developer.mozilla.org/es/docs/Web/CSS/object-fit*/
     object-fit: cover;
@@ -572,17 +571,24 @@ input[type=submit]:hover{
     }
 
     .last-section  a{
+        display: block;
+        width: 35%;
         text-align: center;
         justify-content: center;  
         margin: auto ;
+        margin-bottom: 25px;
     }
 
     /*Toma la última clase declarada en el html:
     <div class="contenedor last-section">*/
     .last-section img{
-        width: 100%;
+        width: 70%;
         /*Para centrar botón*/
         display:block;
         margin:auto;
+    }
+
+    .contenedor-textos-main .parrafo{
+        text-align: center;
     }
 }    
