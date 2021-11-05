@@ -40,13 +40,22 @@ body{
 }
 
 .testimonial-client img{
-	width: 120px;
-	margin:auto;
+	/* cambia estos dos valores para definir el tamaño de tu círculo */
+    height: 250px;
+    width: 250px;
+	/* los siguientes valores son independientes del tamaño del círculo */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+	display: block;
+	margin: auto;
+    scroll-margin-block: 20px;
 }
 
 .client-name{
-	font-family: 'Courier New', Courier, monospace;
-	font-weight: 600;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: 700;
 	text-align: center;
 }
 

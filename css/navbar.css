@@ -1,0 +1,273 @@
+/*Imagen con el logo de Zion Dental*/
+#logoFinal img{
+    /* cambia estos dos valores para definir el tamaño de tu círculo*/
+    height: 100px;
+    width: 100px;
+	/* los siguientes valores son independientes del tamaño del círculo*/
+    background-repeat: no-repeat;
+    background-position: 150px;
+    border-radius: 150px;
+    background-size: 100% auto;
+}
+
+
+/*
+body{
+    font-family: poppins;
+}
+*/
+
+.hero .carousel-inner .item{
+    height: 100vh;
+}
+
+.navbar-inverse{
+    background-color: transparent;
+    border-color: transparent;
+    position: absolute;
+}
+
+/*Para la letra inferno(después se reemplazara con el logoFinal
+.navbar-inverse .navbar-brand{
+    color: #262626;
+    font-size: 40px;
+    padding: 40px 15px;
+    font-weight: 900;
+}
+*/
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+    border-color: #fff;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+    background-color: #f0cde2;
+}
+
+
+.nav.navbar-nav.navbar-right{
+    margin: 25px 0;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover{
+    color: #cefcf3;;
+}
+
+.banner{
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 1275px;
+}
+
+
+.carousel-caption{
+    padding-bottom: 250px;
+    font-family: poppins;
+}
+
+.carousel-caption h2{
+    font-size:  70px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.carousel-caption h2 span{
+    color: #89e9d7;
+}
+
+.carousel-caption a{
+    /*
+    background: #89e9d7;
+    padding: 15px 35px;
+    display: inline-block;
+    margin-top: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 25px;
+    */
+
+    /*Para tener propiedades de bloque y de línea*/
+    display: inline-block;
+    /*Text Decoration para quitar el subrayado*/
+    text-decoration: none;
+    /*Padding 12px arriba y abajo, también 15px a los lados,
+    con esto lo hacemos más grande el link de contactanos*/
+    padding: 12px 15px;
+    background: #89e9d7;
+    /*Ahora para redondearlo usamos:*/
+    border-radius: 10px;
+    /*Color del texto blanco*/
+    color: #fff;
+    margin-top: 15px;
+}
+
+.carousel-caption a:hover{
+    color:#f8c9e6;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.carousel-control-right{
+    background-image: none;
+}
+
+.carousel-control-left{
+    background-image: none;
+}
+
+.carousel-indicators .active{
+    background-color: #89e9d7;
+    border-color: #89e9d7;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 110px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}
+
+/*Media Query para quedar adaptado a dispositivos móviles*/
+@media screen and (max-width:480px){
+    .navbar-toggle{
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+        border-color: #fff;
+        background-color: #f8c9e6;
+        margin-top: 85px;
+    }
+
+    #logoFinal{
+        width: 10px;
+        height: 10px;
+        background-repeat: no-repeat;
+        background-position: 150px;
+        border-radius: 150px;
+        background-size: 100% auto;
+    }
+
+    .carousel-inner .item.active{
+        height: 500px;
+    }
+
+    .banner{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 500px;
+        height: 100%;
+    }
+
+    .carousel-caption{
+        padding-bottom: 150px;
+        font-family: poppins;
+    }
+
+    .carousel-caption h2{
+        font-size: 40px;
+    }
+
+    .carousel-caption h3{
+        font-size: 20px;
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        bottom: 100px;
+        left: 50%;
+        z-index: 15;
+        width: 60%;
+        padding-left: 0;
+        margin-left: -30%;
+        text-align: center;
+        list-style: none;
+    }
+   
+}
+
+/*Menu de navegación adaptable a dispositivo iPad*/
+@media screen and (max-width:768px){
+    .carousel-caption{
+        padding-bottom: 399px;
+        font-family: poppins;
+    }
+
+    .carousel-caption h2{
+        font-size: 66px;
+    }
+
+    .carousel-caption h3{
+        font-size: 23px;
+    }
+
+    .carousel-caption a{
+        /*Para tener propiedades de bloque y de línea*/
+        display: inline-block;
+        /*Text Decoration para quitar el subrayado*/
+        text-decoration: none;
+        /*Padding 12px arriba y abajo, también 15px a los lados,
+        con esto lo hacemos más grande el link de contactanos*/
+        padding: 15px 45px;
+        background: #89e9d7;
+        /*Ahora para redondearlo usamos:*/
+        border-radius: 10px;
+        /*Color del texto blanco*/
+        color: #fff;
+        margin-top: 15px;
+        font-size: 25px;
+    }
+    
+}
+
+
+/*Menu de navegación adaptable a dipositivo iPad Pro*/
+@media screen and (max-width:1024px) {
+    .carousel-caption{
+        margin-bottom: 300px;
+        font-family: poppins;
+    }
+
+    .carousel-caption h2{
+        font-size: 75px;
+    }
+
+    .carousel-caption h3{
+        font-size: 35px;
+    }
+
+    .carousel-caption a{
+        /*Para tener propiedades de bloque y de línea*/
+        display: inline-block;
+        /*Text Decoration para quitar el subrayado*/
+        text-decoration: none;
+        /*Padding 12px arriba y abajo, también 15px a los lados,
+        con esto lo hacemos más grande el link de contactanos*/
+        padding: 15px 45px;
+        background: #89e9d7;
+        /*Ahora para redondearlo usamos:*/
+        border-radius: 10px;
+        /*Color del texto blanco*/
+        color: #fff;
+        margin-top: 15px;
+        font-size: 25px;
+    }
+
+    
+    .svg-hero{
+        height: 200px;
+    }
+}

@@ -25,19 +25,20 @@ body{
 
 /*Vamos al estilo con la clase hero, copiamos el gradient sacado de webgradient, ponemos
 url, salimos de la ruta de css y vamos a img con la imagen de ZionDental Carousel.png**/
-
+/*
 .hero{
-    background-image: linear-gradient(to top, rgba(255, 154, 157, 0.694) 0%, rgba(254, 207, 239, 0.694) 99%, #fecfef 100%), url("../img/Servicios_4.png");
+    /*background-image: linear-gradient(to top, rgba(255, 154, 157, 0.694) 0%, rgba(254, 207, 239, 0.694) 99%, #fecfef 100%), url("../img/Servicios_4.png");
     width: 100%;
-    height: 650px;
+    height: 712px;
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     position: relative;
-    /*Para que nada salga del hero*/
+    /*Para que nada salga del hero
     overflow: hidden;
 }
+*/
 
 /*Vamos a la clase textos hero, parte donde está el encabezado de 
 bienvenida con la foto. Con esto el texto se pone uno al lado del otro y
@@ -60,32 +61,34 @@ https://developer.mozilla.org/es/docs/Web/CSS/flex*/
     align-items: center;
 }
 
-/*Ahora le daremos estilos al h1, aumentando el tamaño fuente de la letra */
+/*Ahora le daremos estilos al h1, aumentando el tamaño fuente de la letra
 .textos-hero h1{
     font-size: 60px;
 }
-
+*/
+/*
 .textos-hero p{
     font-size: 25px;
-    /*Esto es para que no se pegue al botón de contactanos, para hacer espacio*/
+    /*Esto es para que no se pegue al botón de contactanos, para hacer espacio
     margin-bottom: 20px;
 }
-
-/*Vamos a modificar los elementos a que estén todos dentro de textos-hero**/
+*/
+/*Vamos a modificar los elementos a que estén todos dentro de textos-hero
 .textos-hero a{
-    /*Para tener propiedades de bloque y de línea*/
+    /*Para tener propiedades de bloque y de línea/
     display: inline-block;
-    /*Text Decoration para quitar el subrayado*/
+    /*Text Decoration para quitar el subrayado/
     text-decoration: none;
     /*Padding 12px arriba y abajo, también 15px a los lados,
-    con esto lo hacemos más grande el link de contactanos*/
+    con esto lo hacemos más grande el link de contactanos/
     padding: 12px 15px;
     background: #89e9d7;
-    /*Ahora para redondearlo usamos:*/
+    /*Ahora para redondearlo usamos:/
     border-radius: 8px;
-    /*Color del texto blanco*/
+    /*Color del texto blanco/
     color: #fff;
 }
+*/
 
 /*Ahora vamos con la clase svg-hero, el cual es la ola azul*/
 .svg-hero{
@@ -135,6 +138,7 @@ le decimos que tenga las siguientes características en css*/
     text-align: left;
 }
 
+
 /*
 .titulo.right{
     text-align: right;
@@ -179,16 +183,25 @@ que tenga espacio entre el título y también el enlace(Aprende más) */
 /*Todos los elementos con la clase cta van a tener:*/
 .cta{
     /*Para tener propiedades de línea y de bloque*/
-    display: inline-block;
+    display: block;
+    margin: auto;
     /*Para saber más de está propiedad, visitar:
     https://developer.mozilla.org/es/docs/Web/CSS/text-decoration*/
     text-decoration: none;
     background-image: linear-gradient(45deg, #9aeeff 0%, #c4fafa 99%, #b0f3eb 100%);
     /*12px arriba y 15px hacía los lados*/
     padding: 12px 15px;
+    width: 35%;
+    margin-top: 5px;
     border-radius: 8px;
     color: #fff;
+    text-align: center;
+    justify-content: start;
 } 
+
+.cta:hover{
+    color:#f8c9e6;
+}
 
 /*Sección de Información */
 .info{
@@ -225,6 +238,7 @@ si lo ponemos al 60% todo sobrepasan y se ponen uno debajo del otro*/
     /*Le decimos que tenga un transition de la propiedad transform,
     si le quitamos la transición 0.6 el efecto se ve golpe*/
     transition: transform 0.6s;
+    margin-bottom: 15px;
 }
 
 /*Cuando se pase el cursor sobre el card, queremos que cambie su box-shadow
@@ -278,8 +292,8 @@ a 6px y  */
 
 /*Dentro de la galeria le decimos a la imagen que tenga un ancho del 30%*/
 .galeria-cont>img{
-    width: 300px; 
-    height: 205px;
+    width: 30%; 
+    height: 290px;
     /*Para saber más de está propiedad, visitar:
     https://developer.mozilla.org/es/docs/Web/CSS/object-fit*/
     object-fit: cover;
@@ -299,7 +313,10 @@ a 6px y  */
 }
 
 .last-section img{
-    width: 48%;
+    display: block;
+    margin: auto;
+    width:auto;
+    height: auto;
 }
 
 .last-section .contenedor-textos-main{
@@ -365,12 +382,25 @@ input[type=submit]:hover{
 .appWhatsapp{
     position: fixed;
     right: 26px;
-    bottom: 100px;
+    bottom: 155px;
     width: 60px;
     z-index: 1000;
 }
 
 .appWhatsapp img{
+    width: 100%;
+    height: auto;
+}
+
+.appInstagram{
+    position: fixed;
+    right:  26px;
+    bottom: 50px;
+    width: 55px;
+    z-index: 1000;
+}
+
+.appInstagram img{
     width: 100%;
     height: auto;
 }
@@ -495,6 +525,13 @@ input[type=submit]:hover{
 
     .card a{
         margin-top: 10px;
+        display: block;
+        text-align: center;
+        justify-content: center;
+        width: 35%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
   
     .textos-hero p{
@@ -590,5 +627,18 @@ input[type=submit]:hover{
 
     .contenedor-textos-main .parrafo{
         text-align: center;
+    }
+    /*Arreglar icono WhatsApp*/
+    .appWhatsapp{
+        position: fixed;
+        right: 26px;
+        bottom: 142px;
+        width: 60px;
+        z-index: 1000;
+    }
+    
+    .appWhatsapp img{
+        width: 100%;
+        height: auto;
     }
 }    
