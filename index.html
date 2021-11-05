@@ -13,13 +13,15 @@
     <!--Para las tarjetas de testimonios en 3D-->
     <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">-->
     <link rel="stylesheet" href="./css/tarjetaTestimonio.css">
-    
+
     <link rel="shortcut icon" href="./img/diente.png">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css" type="text/css"> 
-
-
-	<script src="sss/sss.js"></script>
+    <!--navbar-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https:cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <script src="sss/sss.js"></script>
 	<script>
 	    jQuery(function($){
 	        $('.slider-testimonial').sss({
@@ -30,16 +32,93 @@
 	</script>
 </head>
 <body>
-    <header class="hero">
+    <header class="hero" id="home">
+        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+            <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a id="logoFinal" class="navbar-brand" href="#"><img src="./img/LogoFinal.jpg" alt=""></a>
+              </div>
+          
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#servicios">Servicios</a></li>
+                  <li><a href="#trabajo">Trabajo</a></li>  
+                  <li><a href="#equipo">Equipo</a></li>      
+                  <li><a href="#testimonios">Testimonios</a></li>      
+                  <li><a href="#historia">Historia</a></li>        
+                  <li><a href="#reserva">Reserva</a></li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li class="carousel" data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li class="carousel" data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li class="carousel" data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
         
-        <div class="textos-hero">
-            <h1>Bienvenido a Zion Dental</h1>
-            <p>La mejor odontología para ti</p>
-            <a href="#contacto">Contactanos</a>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="banner" style="background-image: linear-gradient(to top, rgba(255, 154, 157, 0.694) 0%, rgba(254, 207, 239, 0.694) 99%, #fecfef 100%), url(./img/Equipo\ Zion.png)"></div>
+                <div class="carousel-caption">
+                    <h2 class="animated bounceInRight" style="animation-delay:1s; 
+                    animation-duration: 2s;">Zion <span>Dental</span></h2>
+                    <h3 class="animated bounceInLeft" style="animation-delay:2s; 
+                    animation-duration: 2s;">La mejor odontología para ti</h3>
+                    <p class="animated bounceInRight" style="animation-delay:3s; 
+                    animation-duration: 2s;"><a href="#">Contactanos</a></p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="banner" style="background-image: linear-gradient(to top, rgba(255, 154, 157, 0.694) 0%, rgba(254, 207, 239, 0.694) 99%, #fecfef 100%), url(./img/Equipo\ Zion.png)"></div>
+                <div class="carousel-caption">
+                    <h2 class="animated bounceInLeft" style="animation-delay:1s; 
+                    animation-duration: 2s;">Zion <span>Dental</span></h2>
+                    <h3 class="animated fadeInUp" style="animation-delay:2s; 
+                    animation-duration: 2s;">Reserva tu hora</h3>
+                    <p class="animated zoomIn" style="animation-delay:3s; 
+                    animation-duration: 2s;"><a href="#">Reserva</a></p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="banner" style="background-image: linear-gradient(to top, rgba(255, 154, 157, 0.694) 0%, rgba(254, 207, 239, 0.694) 99%, #fecfef 100%), url(./img/Equipo\ Zion\ 2.png)"></div>
+                <div class="carousel-caption">
+                    <h2 class="animated zoomIn" style="animation-delay:1s; 
+                    animation-duration: 2s;">Zion <span>Dental</span></h2>
+                    <h3 class="animated fadeInLeft" style="animation-delay:2s; 
+                    animation-duration: 2s;">Teleodontología</h3>
+                    <p class="animated zoomIn" style="animation-delay:3s; 
+                    animation-duration: 2s;"><a href="#">Agenda</a></p>
+                </div>
+            </div>
+        
+            
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
         </div>
-        <!--Le ponemos una clase llamada svg-hero, también al poner el fill con color blanco: #fff, de esa forma podemos simular la ola -->
+        <!--Le ponemos una clase llamada svg-hero, también al poner el fill con color blanco: #fff, de esa forma podemos simular la ola-->
         <div class="svg-hero" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-        <path d="M0.00,49.99 C150.00,150.00 349.21,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+            <path d="M0.00,49.99 C150.00,150.00 349.21,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg>
+        </div>
     </header>
     <!--SECCIÓN DE INFORMACIÓN-->
     <!--
@@ -52,7 +131,7 @@
     </section>
     -->
     <!--Ahora se agrega la clase card con la clase contenedor, donde se mostrará los servicios-->
-    <section class="cards contenedor">
+    <section id="servicios" class="cards contenedor">
         <h2 class="titulo">Nuestro Servicios</h2>
         <div class="content-cards">
             <article class="card">
@@ -81,11 +160,59 @@
                 <!--Agregamos un elemnto a con un botón que tenga la clase cta-->
                 <a href="" class="cta">Ver</a>
             </article> 
+            <article class="card">
+                <!--se copia el icono clone desde la web fontawesone-->
+                <i class="fas fa-teeth-open"></i>
+                <h3>Cirugía bucal</h3>
+                <p>Cirugías orales básicas de tejidos duros o blandos, como por ejemplo exodoncias.</p>
+                <!--Agregamos un elemnto a con un botón que tenga la clase cta-->
+                <a href="" class="cta">Ver</a>
+            </article> 
+            <article class="card">
+                <!--se copia el icono clone desde la web fontawesone-->
+                <i class="fas fa-teeth-open"></i>
+                <h3>Endodoncia</h3>
+                <p>Tratamientos que se realizan al interior del diente, más conocido como “tratamiento de conducto”.</p>
+                <!--Agregamos un elemnto a con un botón que tenga la clase cta-->
+                <a href="" class="cta">Ver</a>
+            </article> 
+            <article class="card">
+                <!--se copia el icono clone desde la web fontawesone-->
+                <i class="fas fa-teeth-open"></i>
+                <h3>Ortodoncia y ortopedia</h3>
+                <p>Tratamientos ortodónticos (frenillos, Brackets), corrección de problemas esqueletales de los maxilares.</p>
+                <!--Agregamos un elemnto a con un botón que tenga la clase cta-->
+                <a href="" class="cta">Ver</a>
+            </article> 
+            <article class="card">
+                <!--se copia el icono clone desde la web fontawesone-->
+                <i class="fas fa-teeth-open"></i>
+                <h3>Periodoncia</h3>
+                <p>Tratamientos de los tejidos que rodean el diente (encía, mucosa, hueso), más conocido como tratamiento periodontal.</p>
+                <!--Agregamos un elemnto a con un botón que tenga la clase cta-->
+                <a href="" class="cta">Ver</a>
+            </article> 
+            <article class="card">
+                <!--se copia el icono clone desde la web fontawesone-->
+                <i class="fas fa-teeth-open"></i>
+                <h3>Estética</h3>
+                <p> Tratamientos como blanqueamientos, carillas y coronas.</p>
+                <!--Agregamos un elemnto a con un botón que tenga la clase cta-->
+                <a href="" class="cta">Ver</a>
+            </article> 
+            <article class="card">
+                <!--se copia el icono clone desde la web fontawesone-->
+                <i class="fas fa-teeth-open"></i>
+                <h3>Atención de niños</h3>
+                <p>Atención de niños desde los 1 a 12 años.</p>
+                <!--Agregamos un elemnto a con un botón que tenga la clase cta-->
+                <a href="" class="cta">Ver</a>
+            </article> 
         </div>
     </section>
 
     <section class="galeria">
-        <div class="contenedor">
+        <div id="trabajo" class="contenedor">
             <h2 class="titulo">Nuestro Trabajo</h2>
             <article class="galeria-cont">
                 <img src="./img/Servicios.png"    alt="">
@@ -99,33 +226,35 @@
         </div>
     </section>
 
-    <section class="carousel-doctores">
+    <section id="equipo" class="carousel-doctores">
         <div class="wrapper">
             <h2><b>Nuestro Equipo</b></h2>
             <div class="slider-testimonial">
                 <div class="testimonial-item">
                     <div class="testimonial-client">
-                        <img src="./img/Dra. Betzabe.png" alt="">
+                        <img src="./img/Dra. Betzabe.jpeg" alt="">
                         <br>
-                        <p class="client-name">Betzabe Aguirre</p>
+                        <p class="client-name">Dra. Betzabe Aguirre</p>
                     </div>
                     <div class="testimonial-text">
                         <p class="parrafo-testimonio">Odontólogo General, Endodoncia, Director General y Dueña de Zion Dental.</p>
                     </div>
                 </div>
+                <!--
                 <div class="testimonial-item">
                     <div class="testimonial-client">
                         <img src="./img/Dra. Betzabe.png" alt="">
                         <br>
-                        <p class="client-name">Shirley Castro</p>
+                        <p class="client-name">Dra. Shirley Castro</p>
                     </div>
                     <div class="testimonial-text">
                         <p class="parrafo-testimonio">Ortodoncista, Ortodoncia y ortopedia Dentomaxilar.</p>
                     </div>
                 </div>
+                -->
                 <div class="testimonial-item">
                     <div class="testimonial-client">
-                        <img src="./img/Dra. Betzabe.png" alt="">
+                        <img src="./img/Camila Saéz.jpeg" alt="">
                         <br>
                         <p class="client-name">Camila Sáez</p>
                     </div>
@@ -135,9 +264,9 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="testimonial-client">
-                        <img src="./img/Dra. Betzabe.png" alt="">
+                        <img src="./img/Dr. Elías.jpeg" alt="">
                         <br>
-                        <p class="client-name">Elías Lanyon</p>
+                        <p class="client-name">Dr. Elías Lanyon</p>
                     </div>
                     <div class="testimonial-text">
                         <p class="parrafo-testimonio">Odontólogo General, Periodoncia y Estética.</p>
@@ -145,9 +274,9 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="testimonial-client">
-                        <img src="./img/Dra. Betzabe.png" alt="">
+                        <img src="./img/Dra. Valeria.jpeg" alt="">
                         <br>
-                        <p class="client-name">Valeria Parra</p>
+                        <p class="client-name">Dra. Valeria Parra</p>
                     </div>
                     <div class="testimonial-text">
                         <p class="parrafo-testimonio">Odontólogo General y Atención de Niños.</p>
@@ -156,7 +285,7 @@
             </div>
     </section>
 
-    <section class="testimonios-clientes">
+    <section id="testimonios" class="testimonios-clientes">
         <div class="contenedor-testimonios">
             <h2>Testimonios Clientes</h2>
             <div class="contenedor-tarjeta-testimonios">
@@ -221,7 +350,7 @@
     </section>
 
 
-    <section class="info-last">
+    <section id="reserva" class="info-last">
         <div class="contenedor last-section">
             <div class="contenedor-textos-main">
                 <h2 class="titulo left">Reserva</h2>
@@ -260,8 +389,14 @@
         <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=+56 9 3352 1021&amp;text=Hola,&nbsp;tengo&nbsp;una&nbsp;duda!">
             <img src="./img/whatsapp.png" alt="Whatsapp">
         </a>
+        <a class="appInstagram" target="_blanck" href="https://www.instagram.com/clinicadentalzion/">
+            <img src="./img/instagram.png" alt="Instagram">
+        </a>
     </footer>
     <!--Copiarmos el kit de fontawesone-->
     <script src="https://kit.fontawesome.com/e0b2b10dd0.js" crossorigin="anonymous"></script>
+    <!--navbar-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 </html> 
