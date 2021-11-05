@@ -13,3 +13,5 @@ https://www.youtube.com/watch?v=pUR0cNL4NU4
 El icono de WhatsApp fue hecho con el siguiente curso en Youtube:
 https://www.youtube.com/watch?v=TisjtrKJXM0&t=740s
 
+El menu de inicio con su respectivo navbar fue hecho con el siguiente curso en Youtube:
+https://www.youtube.com/watch?v=sbf3uv0reTc
