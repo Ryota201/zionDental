@@ -1,8 +1,8 @@
 /*Imagen con el logo de Zion Dental*/
 #logoFinal img{
     /* cambia estos dos valores para definir el tamaño de tu círculo*/
-    height: 100px;
-    width: 100px;
+    height: 65px;
+    width: 65px;
 	/* los siguientes valores son independientes del tamaño del círculo*/
     background-repeat: no-repeat;
     background-position: 150px;
@@ -39,7 +39,12 @@ body{
     border-color: #fff;
 }
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
-    background-color: #f0cde2;
+    background-color: transparent;
+}
+
+/*Color del borde del ícono*/
+.navbar-inverse .navbar-toggle {
+    border-color: #fff;
 }
 
 
@@ -69,7 +74,7 @@ body{
 
 
 .carousel-caption{
-    padding-bottom: 250px;
+    padding-bottom: 200px;
     font-family: poppins;
 }
 
@@ -139,101 +144,6 @@ body{
     list-style: none;
 }
 
-/*Media Query para quedar adaptado a dispositivos móviles*/
-@media screen and (max-width:480px){
-    .navbar-toggle{
-        margin-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
-        border-color: #fff;
-        background-color: #f8c9e6;
-        margin-top: 85px;
-    }
-
-    #logoFinal{
-        width: 10px;
-        height: 10px;
-        background-repeat: no-repeat;
-        background-position: 150px;
-        border-radius: 150px;
-        background-size: 100% auto;
-    }
-
-    .carousel-inner .item.active{
-        height: 500px;
-    }
-
-    .banner{
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 500px;
-        height: 100%;
-    }
-
-    .carousel-caption{
-        padding-bottom: 150px;
-        font-family: poppins;
-    }
-
-    .carousel-caption h2{
-        font-size: 40px;
-    }
-
-    .carousel-caption h3{
-        font-size: 20px;
-    }
-
-    .carousel-indicators {
-        position: absolute;
-        bottom: 100px;
-        left: 50%;
-        z-index: 15;
-        width: 60%;
-        padding-left: 0;
-        margin-left: -30%;
-        text-align: center;
-        list-style: none;
-    }
-   
-}
-
-/*Menu de navegación adaptable a dispositivo iPad*/
-@media screen and (max-width:768px){
-    .carousel-caption{
-        padding-bottom: 399px;
-        font-family: poppins;
-    }
-
-    .carousel-caption h2{
-        font-size: 66px;
-    }
-
-    .carousel-caption h3{
-        font-size: 23px;
-    }
-
-    .carousel-caption a{
-        /*Para tener propiedades de bloque y de línea*/
-        display: inline-block;
-        /*Text Decoration para quitar el subrayado*/
-        text-decoration: none;
-        /*Padding 12px arriba y abajo, también 15px a los lados,
-        con esto lo hacemos más grande el link de contactanos*/
-        padding: 15px 45px;
-        background: #89e9d7;
-        /*Ahora para redondearlo usamos:*/
-        border-radius: 10px;
-        /*Color del texto blanco*/
-        color: #fff;
-        margin-top: 15px;
-        font-size: 25px;
-    }
-    
-}
-
-
 /*Menu de navegación adaptable a dipositivo iPad Pro*/
 @media screen and (max-width:1024px) {
     .carousel-caption{
@@ -265,9 +175,137 @@ body{
         margin-top: 15px;
         font-size: 25px;
     }
-
-    
-    .svg-hero{
+   .svg-hero{
         height: 200px;
     }
+}
+
+/*Menu de navegación adaptable a dispositivo iPad*/
+@media screen and (max-width:768px){
+
+    /*Para enderezar el navbar*/
+    .container>.navbar-header{
+        margin-right: -13px;
+        margin-top: 0;
+    }
+
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+        border-color: #fff;
+        margin-top: 15px;
+    }
+
+    .nav.navbar-nav.navbar-right {
+        margin: 25px 0;
+        margin-top: -22px;
+        margin-right: -15px;
+    }
+
+    .carousel-caption{
+        padding-bottom: 30px;
+    }
+
+    .carousel-caption h2{
+        font-size: 66px;
+    }
+
+    .carousel-caption h3{
+        font-size: 23px;
+    }
+
+    .carousel-caption a{
+        /*Para tener propiedades de bloque y de línea*/
+        display: inline-block;
+        /*Text Decoration para quitar el subrayado*/
+        text-decoration: none;
+        /*Padding 12px arriba y abajo, también 15px a los lados,
+        con esto lo hacemos más grande el link de contactanos*/
+        padding: 15px 45px;
+        background: #89e9d7;
+        /*Ahora para redondearlo usamos:*/
+        border-radius: 10px;
+        /*Color del texto blanco*/
+        color: #fff;
+        margin-top: 15px;
+        font-size: 25px;
+    }
+}
+
+/*Media Query para quedar adaptado a dispositivos móviles*/
+@media screen and (max-width:480px){
+    .navbar-toggle{
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+        border-color: #fff;
+        background-color: #f8c9e6;
+        margin-top: 85px;
+    }
+
+    #logoFinal{
+        width: 10px;
+        height: 10px;
+        background-repeat: no-repeat;
+        background-position: 150px;
+        border-radius: 150px;
+        background-size: 100% auto;
+    }
+
+    .carousel-inner .item.active{
+        height: 500px;
+    }
+
+    .banner{
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 86%;
+    }
+
+    .carousel-caption{
+        padding-bottom: 0;
+        margin-bottom: 145px;
+        font-family: poppins;
+    }
+
+    .carousel-caption h2{
+        font-size: 40px;
+    }
+
+    .carousel-caption h3{
+        font-size: 20px;
+    }
+
+    /*Para arreglar el ancla del botón*/
+    .carousel-caption a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 20px;
+        background: #89e9d7;
+        border-radius: 10px;
+        color: #fff;
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        bottom: 100px;
+        left: 50%;
+        z-index: 15;
+        width: 60%;
+        padding-left: 0;
+        margin-left: -30%;
+        text-align: center;
+        list-style: none;
+    }
+
+    /*Para la barra de navegación en dispositivos móviles*/
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+        border-color: #fff;
+        background-color: #f8c9e6;
+        margin-top: 34px;
+        padding-top: 30px;
+    }
+   
 }

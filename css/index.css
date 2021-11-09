@@ -39,6 +39,19 @@ url, salimos de la ruta de css y vamos a img con la imagen de ZionDental Carouse
     overflow: hidden;
 }
 */
+.header{
+    background-image: linear-gradient(to top, rgba(255, 154, 157, 0.694) 0%, rgba(254, 207, 239, 0.694) 99%, #fecfef 100%), url("/img/Servicios_4.png");
+    width: 100%;
+    height: 638px;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    /*Para que nada salga del hero*/
+    overflow: hidden;
+}
+
 
 /*Vamos a la clase textos hero, parte donde está el encabezado de 
 bienvenida con la foto. Con esto el texto se pone uno al lado del otro y
@@ -61,34 +74,42 @@ https://developer.mozilla.org/es/docs/Web/CSS/flex*/
     align-items: center;
 }
 
-/*Ahora le daremos estilos al h1, aumentando el tamaño fuente de la letra
+/*Ahora le daremos estilos al h1, aumentando el tamaño fuente de la letra*/
 .textos-hero h1{
     font-size: 60px;
 }
-*/
-/*
+
+
 .textos-hero p{
     font-size: 25px;
-    /*Esto es para que no se pegue al botón de contactanos, para hacer espacio
+    /*Esto es para que no se pegue al botón de contactanos, para hacer espacio*/
     margin-bottom: 20px;
 }
-*/
-/*Vamos a modificar los elementos a que estén todos dentro de textos-hero
+
+/*Vamos a modificar los elementos a que estén todos dentro de textos-hero*/
 .textos-hero a{
-    /*Para tener propiedades de bloque y de línea/
+    /*Para tener propiedades de bloque y de línea*/
     display: inline-block;
-    /*Text Decoration para quitar el subrayado/
+    /*Text Decoration para quitar el subrayado*/
     text-decoration: none;
     /*Padding 12px arriba y abajo, también 15px a los lados,
-    con esto lo hacemos más grande el link de contactanos/
+    con esto lo hacemos más grande el link de contactanos*/
     padding: 12px 15px;
     background: #89e9d7;
-    /*Ahora para redondearlo usamos:/
+    /*Ahora para redondearlo usamos:*/
     border-radius: 8px;
-    /*Color del texto blanco/
+    /*Color del texto blanco*/
     color: #fff;
 }
-*/
+
+.textos-hero a:hover{
+    text-decoration: none;
+    color: #f7ebf2;
+}
+
+.reserva h2{
+    text-align: center;
+}
 
 /*Ahora vamos con la clase svg-hero, el cual es la ola azul*/
 .svg-hero{
@@ -199,8 +220,27 @@ que tenga espacio entre el título y también el enlace(Aprende más) */
     justify-content: start;
 } 
 
+#ctaHistoria{
+    /*Para tener propiedades de línea y de bloque*/
+    display: block;
+    margin: auto;
+    /*Para saber más de está propiedad, visitar:
+    https://developer.mozilla.org/es/docs/Web/CSS/text-decoration*/
+    text-decoration: none;
+    background-image: linear-gradient(45deg, #9aeeff 0%, #c4fafa 99%, #b0f3eb 100%);
+    /*12px arriba y 15px hacía los lados*/
+    padding: 12px 15px;
+    width: 15%;
+    margin-top: 5px;
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+    justify-content: start;   
+}
+
 .cta:hover{
     color:#f8c9e6;
+    text-decoration: none;
 }
 
 /*Sección de Información */
@@ -252,13 +292,22 @@ a 6px y  */
     cursor: pointer;
 }
 
-/*Elementos i dentro de card:*/
+/*Elementos i dentro de card:
 .card i{
-    /*30px arriba, 0 hacía la derecha, 20px abajo y 0 a la izquierda*/
+    /*30px arriba, 0 hacía la derecha, 20px abajo y 0 a la izquierda
     margin: 30px 0 20px 0;
     color: #89e9d7;
+    /*Para hacerlo má grande
+    font-size: 50px;
+}
+*/
+
+.card img{
+    /*30px arriba, 0 hacía la derecha, 20px abajo y 0 a la izquierda*/
+    margin: 30px 0 20px 0;
     /*Para hacerlo má grande*/
     font-size: 50px;
+    width: 30%;
 }
 
 /*El elemento p dentro de la clase card(en article)*/
@@ -308,6 +357,7 @@ a 6px y  */
 .last-section{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
     justify-content: space-between;
     padding-bottom: 40px;
 }
@@ -450,7 +500,7 @@ input[type=submit]:hover{
     }
 
     .contenedor-textos-main .parrafo{
-        text-align: center;
+        text-align: justify;
     }
 
 
@@ -503,6 +553,25 @@ input[type=submit]:hover{
 
 /*Ahora se hará la responsividad a 200px*/
 @media screen and (min-width:200px) and (max-width:400px) {
+    .textos-hero{
+       color: #fff;
+        display: flex;
+        /*Con un flex direction column, le decimos a los textos que se
+        orden por columna y no por fila*/
+        flex-direction: column;
+        /*Centrar el contenido(textos) en el navegador entre y alrededor 
+        de los items flex. Para saber más de está propiedad, visita:
+        https://developer.mozilla.org/es/docs/Web/CSS/justify-content*/
+        justify-content: center;
+        /*Con está propiedad los centramos horizontalmente y verticalmente  */
+        align-items: center;
+        /*margin-top: -489px;*/
+    }
+
+    .reserva h2{
+        text-align: center;
+    }
+
     .titulo,
     .textos-hero h1{
         font-size: 30px;
@@ -568,7 +637,7 @@ input[type=submit]:hover{
     .website-history .contenedor-textos-main a{
         display:block;
         margin: auto;
-        width: auto;/*Se pone en auto para que se adapte automáticamente al ancho */
+        width: 45%;/*Se pone en auto para que se adapte automáticamente al ancho */
         height: auto;
         text-align: center
     }
@@ -626,7 +695,7 @@ input[type=submit]:hover{
     }
 
     .contenedor-textos-main .parrafo{
-        text-align: center;
+        text-align: justify;
     }
     /*Arreglar icono WhatsApp*/
     .appWhatsapp{
