@@ -40,9 +40,8 @@ url, salimos de la ruta de css y vamos a img con la imagen de ZionDental Carouse
 }
 */
 .header{
-    background-image: linear-gradient(to top, rgba(255, 154, 157, 0.694) 0%, rgba(254, 207, 239, 0.694) 99%, #fecfef 100%), url("/img/Servicios_4.png");
     width: 100%;
-    height: 638px;
+    height: 545px;
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center;
@@ -52,6 +51,14 @@ url, salimos de la ruta de css y vamos a img con la imagen de ZionDental Carouse
     overflow: hidden;
 }
 
+#fotoHistoria{
+    background-image: linear-gradient(to top, rgba(255, 154, 157, 0.694) 0%, rgba(254, 207, 239, 0.694) 99%, #fecfef 100%), url(/img/Equipo\ Zion.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 1077px;
+}
 
 /*Vamos a la clase textos hero, parte donde está el encabezado de 
 bienvenida con la foto. Con esto el texto se pone uno al lado del otro y
@@ -60,7 +67,7 @@ Para saber más de flex, ingresar a esté link:
 https://developer.mozilla.org/es/docs/Web/CSS/flex*/
 
 .textos-hero{
-    height: 500px;
+    height: 440px;
     color: #fff;
     display: flex;
     /*Con un flex direction column, le decimos a los textos que se
@@ -107,8 +114,68 @@ https://developer.mozilla.org/es/docs/Web/CSS/flex*/
     color: #f7ebf2;
 }
 
-.reserva h2{
+/*Sección reservaHorario: Página de Reserva*/
+.reservas{
+    /*Con esto las tarjetas se pone uno al lado del otro*/
+    display: flex;
+    width: 100%;
+    /*Espacio entre las cards equitativamente*/
+    justify-content: space-evenly;
+    /*Si sobrepasa el elemento(cards) que se ponga debajo del otro*/
+    flex-wrap: wrap;
+}
+
+/*Texto arriba de la tarjeta*/
+.reservaPresencial h2{
     text-align: center;
+    margin-bottom: 30px;
+    margin-top: 45px;
+}
+/*Texto arriba de la tarjeta*/
+.agenda h2{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 45px;
+}
+
+/*Configuraciones para las tarjetas de las reservas*/
+.tarjeta{
+    /*Si quieres saber más de está propiedad, visita:
+    https://developer.mozilla.org/en-US/docs/Web/CSS/text-align*/
+    text-align: center;
+    padding: 10px;
+    /*Con esto se hace la parte del sombra en nuestra tarjeta*/
+    box-shadow: 0 0 3px 0 rgba(0,0, 0, .5);
+    /*Para que no pase nada*/
+    transform: scale(1);
+    /*Le decimos que tenga un transition de la propiedad transform,
+    si le quitamos la transición 0.6 el efecto se ve golpe*/
+    transition: transform 0.6s;
+    margin-bottom: 40px;
+    /*Se acomodo al centro la tarjeta*/
+    width: 283px;
+    position: relative;
+    left: 9.5007px;
+    height: 251px;
+}
+/*Configuraciones para la imagen dentro de la tarjeta*/
+.tarjeta img{
+    /*30px arriba, 0 hacía la derecha, 20px abajo y 0 a la izquierda*/
+    margin: 30px 0 20px 0;
+    /*Para hacerlo má grande*/
+    font-size: 50px;
+    width: 30%;
+}
+
+/*Cuando se pase el cursor sobre el card, queremos que cambie su box-shadow
+a 6px y  */
+.tarjeta:hover{
+    box-shadow: 0 0 6px 0 rgba(0,0, 0, .5);
+    /*Un transform scale de 1.03 para crecer un poco(card)*/
+    transform: scale(1.03);
+    /*Para saber más de está propiedad, visitar:
+    https://developer.mozilla.org/es/docs/Web/CSS/cursor*/
+    cursor: pointer;
 }
 
 /*Ahora vamos con la clase svg-hero, el cual es la ola azul*/
@@ -157,6 +224,7 @@ le decimos que tenga las siguientes características en css*/
 
 .titulo.left{
     text-align: left;
+    margin-top: -44px;
 }
 
 
@@ -212,7 +280,7 @@ que tenga espacio entre el título y también el enlace(Aprende más) */
     background-image: linear-gradient(45deg, #9aeeff 0%, #c4fafa 99%, #b0f3eb 100%);
     /*12px arriba y 15px hacía los lados*/
     padding: 12px 15px;
-    width: 35%;
+    width: 43%;
     margin-top: 5px;
     border-radius: 8px;
     color: #fff;
@@ -230,7 +298,7 @@ que tenga espacio entre el título y también el enlace(Aprende más) */
     background-image: linear-gradient(45deg, #9aeeff 0%, #c4fafa 99%, #b0f3eb 100%);
     /*12px arriba y 15px hacía los lados*/
     padding: 12px 15px;
-    width: 15%;
+    width: 10%;
     margin-top: 5px;
     border-radius: 8px;
     color: #fff;
@@ -243,11 +311,12 @@ que tenga espacio entre el título y también el enlace(Aprende más) */
     text-decoration: none;
 }
 
-/*Sección de Información */
+/*Sección de Información
 .info{
     background: #89e9d7;
     color: #fff;
 }
+*/
 
 /*Sección con la clase Cards
 class="content cards"
@@ -292,15 +361,15 @@ a 6px y  */
     cursor: pointer;
 }
 
-/*Elementos i dentro de card:
+/*Elementos i dentro de card*/
 .card i{
-    /*30px arriba, 0 hacía la derecha, 20px abajo y 0 a la izquierda
+    /*30px arriba, 0 hacía la derecha, 20px abajo y 0 a la izquierda*/
     margin: 30px 0 20px 0;
     color: #89e9d7;
-    /*Para hacerlo má grande
+    /*Para hacerlo má grande*/
     font-size: 50px;
 }
-*/
+
 
 .card img{
     /*30px arriba, 0 hacía la derecha, 20px abajo y 0 a la izquierda*/
@@ -338,6 +407,7 @@ a 6px y  */
     /*Para que nada salga del contenedor de la galeria*/
     overflow: hidden;
 }
+
 
 /*Dentro de la galeria le decimos a la imagen que tenga un ancho del 30%*/
 .galeria-cont>img{
@@ -432,7 +502,7 @@ input[type=submit]:hover{
 .appWhatsapp{
     position: fixed;
     right: 26px;
-    bottom: 155px;
+    bottom: 220px;
     width: 60px;
     z-index: 1000;
 }
@@ -445,7 +515,7 @@ input[type=submit]:hover{
 .appInstagram{
     position: fixed;
     right:  26px;
-    bottom: 50px;
+    bottom: 130px;
     width: 55px;
     z-index: 1000;
 }
@@ -453,6 +523,19 @@ input[type=submit]:hover{
 .appInstagram img{
     width: 100%;
     height: auto;
+}
+
+/*Barra ir arriba*/
+.ir-arriba {
+	display:none;
+	padding:20px;
+	background:#f8c9e6;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
 }
 
 @media screen and (min-width:400px) and (max-width:800px){
@@ -579,7 +662,7 @@ input[type=submit]:hover{
     }
 
     .card{
-        width: 98%;
+        width: 85%;
         margin-bottom: 5vw;
         
     }
@@ -669,7 +752,7 @@ input[type=submit]:hover{
         width: 48%;
     }
 
-    /* Last Section*/
+    /* Last Section
     .last-section  .contenedor-textos-main{
         display:block;
         margin:auto;
@@ -684,29 +767,42 @@ input[type=submit]:hover{
         margin: auto ;
         margin-bottom: 25px;
     }
-
+    */
     /*Toma la última clase declarada en el html:
-    <div class="contenedor last-section">*/
+    <div class="contenedor last-section">
     .last-section img{
         width: 70%;
-        /*Para centrar botón*/
+        /*Para centrar botón
         display:block;
         margin:auto;
     }
-
+    
     .contenedor-textos-main .parrafo{
         text-align: justify;
     }
+    */
     /*Arreglar icono WhatsApp*/
     .appWhatsapp{
         position: fixed;
         right: 26px;
-        bottom: 142px;
+        bottom: 220px;
         width: 60px;
         z-index: 1000;
     }
     
     .appWhatsapp img{
+        width: 100%;
+        height: auto;
+    }
+    .appInstagram{
+        position: fixed;
+        right:  26px;
+        bottom: 110px;
+        width: 55px;
+        z-index: 1000;
+    }
+
+    .appInstagram img{
         width: 100%;
         height: auto;
     }

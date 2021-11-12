@@ -1,8 +1,8 @@
 /*Imagen con el logo de Zion Dental*/
 #logoFinal img{
     /* cambia estos dos valores para definir el tamaño de tu círculo*/
-    height: 65px;
-    width: 65px;
+    height: 80px;
+    width: 80px;
 	/* los siguientes valores son independientes del tamaño del círculo*/
     background-repeat: no-repeat;
     background-position: 150px;
@@ -87,6 +87,9 @@ body{
     color: #89e9d7;
 }
 
+.carousel-caption h3{
+    font-size: 45px;
+}
 .carousel-caption a{
     /*
     background: #89e9d7;
@@ -180,9 +183,7 @@ body{
     }
 }
 
-/*Menu de navegación adaptable a dispositivo iPad*/
-@media screen and (max-width:768px){
-
+@media screen and (max-width:540px){
     /*Para enderezar el navbar*/
     .container>.navbar-header{
         margin-right: -13px;
@@ -191,17 +192,48 @@ body{
 
     .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
         border-color: #fff;
-        margin-top: 15px;
+        margin-top: 51px;
+        padding-bottom: 66px;
+        background-color: #f8c9e6;
     }
 
     .nav.navbar-nav.navbar-right {
-        margin: 25px 0;
-        margin-top: -22px;
-        margin-right: -15px;
+        margin: 25px 60px;
+        margin-top: -32px;
+        margin-left: 70px;
     }
 
+    /*Para la responsividad del Surface Duo y adaptar el menu*/
+    .navbar-inverse .navbar-nav > li > a {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    /*Para adaptar la altura de la imagen de Zion con responsividad en celular Surface Duo*/
+    .banner {
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 675px;
+    }
+    
+
     .carousel-caption{
-        padding-bottom: 30px;
+        margin-bottom: 50px;
     }
 
     .carousel-caption h2{
@@ -219,15 +251,93 @@ body{
         text-decoration: none;
         /*Padding 12px arriba y abajo, también 15px a los lados,
         con esto lo hacemos más grande el link de contactanos*/
-        padding: 15px 45px;
+        padding: 10px 25px;
         background: #89e9d7;
         /*Ahora para redondearlo usamos:*/
         border-radius: 10px;
         /*Color del texto blanco*/
         color: #fff;
         margin-top: 15px;
-        font-size: 25px;
+        font-size: 15px;
     }
+}
+
+
+/*Menu de navegación adaptable a dispositivo iPad*/
+@media screen and (min-width:541px) and (max-width:768px){
+    /*Para enderezar el navbar*/
+    .container>.navbar-header{
+        margin-right: -13px;
+        margin-top: 0;
+    }
+
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+        border-color: #fff;
+        margin-top: 51px;
+        padding-bottom: 66px;
+    }
+    .nav.navbar-nav.navbar-right {
+        margin: 25px 60px;
+        margin-top: -32px;
+        margin-left: 71px;
+        position: relative;
+        left: 35px;
+    }
+    .navbar-inverse .navbar-nav > li > a {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    #logoFinal:nth-child(2) > img:nth-child(1) {
+        top: 30px;
+        position: relative;
+        left: 15px;
+    }
+    
+    /*Para adaptar la altura de la imagen de Zion con responsividad en celular Surface Duo*/
+    .banner {
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 955px;
+    }
+    
+
+    .carousel-caption{
+        margin-bottom: 200px;
+    }
+
+    .carousel-caption h2{
+        font-size: 66px;
+    }
+
+    .carousel-caption h3{
+        font-size: 23px;
+    }
+
+    .carousel-caption a{
+        /*Para tener propiedades de bloque y de línea*/
+        display: inline-block;
+        /*Text Decoration para quitar el subrayado*/
+        text-decoration: none;
+        /*Padding 12px arriba y abajo, también 15px a los lados,
+        con esto lo hacemos más grande el link de contactanos*/
+        padding: 10px 25px;
+        background: #89e9d7;
+        /*Ahora para redondearlo usamos:*/
+        border-radius: 10px;
+        /*Color del texto blanco*/
+        color: #fff;
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+
 }
 
 /*Media Query para quedar adaptado a dispositivos móviles*/
@@ -304,8 +414,8 @@ body{
     .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
         border-color: #fff;
         background-color: #f8c9e6;
-        margin-top: 34px;
-        padding-top: 30px;
+        margin-top: 43px;
+        padding-top: 59px;
     }
    
 }

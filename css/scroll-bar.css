@@ -1,0 +1,12 @@
+/* Scroll Personalizado */
+
+body::-webkit-scrollbar {
+	width: 13px;
+	background: #f8c9e6;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: rgba(255,255,255, .2);
+	border-radius: 10px;
+	border-right: 2px solid #000;
+}
